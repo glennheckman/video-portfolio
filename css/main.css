@@ -1,0 +1,115 @@
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+  font-size:16px;
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color:#f1F1f1;
+}
+
+.videoPlayer
+{
+  margin-top:50px;
+  margin-bottom:20px;
+}
+
+.embed-responsive{
+  max-height:1200px;
+}
+
+.videoBox
+{
+  height:200px;
+  margin:5px;
+  padding:10px;
+  background-color:white;
+
+  -webkit-box-shadow: 0px 38px 78px -33px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 38px 78px -33px rgba(0,0,0,0.37);
+  box-shadow: 0px 38px 78px -33px rgba(0,0,0,0.37);
+
+}
+
+.videoBox img:hover
+{
+  max-width:105%;
+}
+
+.videoBox img
+{
+  height:auto;
+  max-width:100%;
+  vertical-align: middle;
+  
+  text-align: center;
+
+  webkit-transition: all .2s ease 10ms;
+  -moz-transition: all .2s ease 10ms;
+  -o-transition: all .2s ease 10ms;
+  transition: all .2s ease 10ms;
+}
+
+.fillwidth {
+    min-width: 100%;
+    height: auto;
+}
+
+.fillheight {
+    min-height: 100%; 
+    width: auto;
+}
+
+
+.navbar{
+  /*opacity:.5;*/
+}
+
+#videoList .videoBox{
+  margin-bottom:20px;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 34em) {
+    body {
+      margin-bottom: 500px;
+    }
+    .footer {
+      height: 500px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
