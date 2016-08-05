@@ -8,7 +8,8 @@
 	<title>DCIL Video Portfolio</title>
 
 	<!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,76 +24,219 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
+      </button>-->
       <a class="navbar-brand" href="#">DCIL Video Portfolio</a>
     </div>
-    <div id="navbar" class="collapse navbar-collapse">
+    <!--<div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div><!-- /.nav-collapse -->
+    </div>--><!-- /.nav-collapse -->
   </div><!-- /.container -->
 </nav>
 
 
-<div align="center" class="embed-responsive embed-responsive-16by9 videoPlayer">
-<!--poster="imgs/punch.jpg"--> 
-    <video controls class="embed-responsive-item">
-        <source src="media/__Patriot_Logo_Teaser_draft_4.mp4" type=video/mp4>
-    </video>
+
+
+
+<div class="container-fluid videoPlayerContainer">
+	<div class="container" style="padding:0;">
+
+		<div align="center" class="embed-responsive embed-responsive-16by9"> 
+		    <video preload="auto" controls poster="imgs/video_thumbs/DCIL_Trailer_Poster.png" class="embed-responsive-item" id="videoPlayer" title="DCIL Video">
+		        <source src="../media/DCIL_Teaser_2016.mp4" type=video/mp4>
+		    </video>
+		</div>
+	
+	</div>
 </div>
 
-<div class="container-fluid" id="videoList">
-	
-	<h1>Videos</h1>
+<!-- Demo Reel -->
+<div class="container videoList">
+	<h1>Demo Reels</h1>
 	
 	<div class="row">
-		<div class="col-sm-6 col-md-4">
-			<div class="videoBox">
-				<img src="imgs/punch.jpg" alt="" title="">
-				Video Box
-			</div>
-		</div>
-		
-		<div class="col-sm-6 col-md-4">
-			<div class="videoBox">
-				<img src="imgs/punch.jpg" alt="" title="">
-				Video Box
-			</div>
-		</div>
-
-		<div class="col-sm-6 col-md-4">
-			<div class="videoBox">
-				<img src="imgs/punch.jpg" alt="" title="">
-				Video Box
-			</div>
-		</div>
-
-		<div class="col-sm-6 col-md-4">
-			<div class="videoBox">
-				<img src="imgs/punch.jpg" alt="" title="">
-				Video Box
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="DCIL_Teaser_2016">
+				<img src="imgs/video_thumbs/videoThumb-DCIL_Demo_Reel_2016.jpg" alt="" title="">
+				<h3>DCIL - Demo Reel 2016</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
 			</div>
 		</div>
 	</div>
 
+</div>
+
+
+<!-- Live Action -->
+<div class="container videoList">
+	<h1>Live Action</h1>
+	
+	<div class="row">
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="__DHS_OnBoarding_2015">
+				<img src="imgs/video_thumbs/videoThumb-DHS_Orientation_Video.jpg" alt="" title="">
+				<h3>DHS</h3>
+				<h4>Orientation Video</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="FAA_RemoteTeamMgmt">
+				<img src="imgs/video_thumbs/videoThumb-FAA_Managing_Remote_Teams.jpg" alt="" title="">
+				<h3>FAA</h3>
+				<h4>Managing Remote Teams</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="eRecords">
+				<img src="imgs/video_thumbs/videoThumb-DoS_eRecords.jpg" alt="" title="">
+				<h3>DoS</h3>
+				<h4>eRecords</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+	
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="NIH_Strategic_Visioning_01162015">
+				<img src="imgs/video_thumbs/videoThumb-NIHLB_2015_Vision.jpg" alt="" title="">
+				<h3>NIH LB</h3>
+				<h4>2015 Vision</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="AHRQ_Samples">
+				<img src="imgs/video_thumbs/videoThumb-AHRQ.jpg" alt="" title="">
+				<h3>AHRQ</h3>
+				<h4></h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="SSA_George">
+				<img src="imgs/video_thumbs/videoThumb-SSA_Georges_Vision.jpg" alt="" title="">
+				<h3>SSA</h3>
+				<h4>George' Vision</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3">
+			<div class="videoBox" data-video="IRS-AD-vision">
+				<img src="imgs/video_thumbs/videoThumb-IRS_Ad_Vision_2015.jpg" alt="" title="">
+				<h3>IRS</h3>
+				<h4>Ad Vision 2015</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Motion Graphics -->
+<div class="container videoList">
+	<h1>Motion Graphics</h1>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="__DIVE_I_Sound_HD_Cleaned">
+			<img src="imgs/video_thumbs/videoThumb-G200_Dive.jpg" alt="" title="">
+			<h3>G200</h3>
+			<h4>DIVE</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="__APTIC_ProcessVideo_04">
+			<img src="imgs/video_thumbs/videoThumb-G200_Aptic_Process.jpg" alt="" title="">
+			<h3>G200</h3>
+			<h4>Aptic Process Video</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="ICE_Values">
+			<img src="imgs/video_thumbs/videoThumb-ICE_Values.jpg" alt="" title="">
+			<h3>ICE</h3>
+			<h4>Values</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="SSA_visionOpener">
+			<img src="imgs/video_thumbs/videoThumb-SSA_Vision_2025.jpg" alt="" title="">
+			<h3>SSA</h3>
+			<h4>Vision 2025</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
 
 </div>
+
+<!-- Mixed Storytelling -->
+<div class="container videoList">
+	<h1>Mixed Storytelling</h1>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="ImpactSelling_20151102">
+			<img src="imgs/video_thumbs/videoThumb-Deloitte_Impact_Selling.jpg" alt="" title="">
+			<h3>Deloitte</h3>
+			<h4>Impact Selling</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="Polaris_Human_Trafficking_V3">
+			<img src="imgs/video_thumbs/videoThumb-Polaris_Human_Trafficking.jpg" alt="" title="">
+			<h3>Polaris</h3>
+			<h4>Human Trafficking</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-md-3">
+		<div class="videoBox" data-video="ICE-TFS">
+			<img src="imgs/video_thumbs/videoThumb-ICE_The_Final_Stretch.jpg" alt="" title="">
+			<h3>ICE</h3>
+			<h4>The Final Stretch</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+		</div>
+	</div>
+
+
+
+
+
+</div>
+
+
+<div style="height:150px;"></div>
+
+
 
 
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-	            <h5>dcil</h5>
-	            <div class="row">
+	            <h5>made by dcil.</h5>
+	            <!--<div class="row">
 	                <div class="col-xs-6">
 	                    <ul class="list-unstyled">
 	                        <li><a href="">Link</a></li>
@@ -101,7 +245,7 @@
 	                        <li><a href="">Link</a></li>
 	                    </ul>
 	                </div>
-	            </div>
+	            </div>-->
 	        </div>
         </div>
     </div>
@@ -109,5 +253,6 @@
 
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

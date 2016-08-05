@@ -1,0 +1,4 @@
+# ignore
+media/**
+*_assets
+imgs/video_thumbs/**
